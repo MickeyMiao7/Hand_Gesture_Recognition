@@ -13,6 +13,10 @@ Deep_Learning_Method
 
 To get explicit info of each method, please refer to the README.md in each subfolder respectively.
 
+#### Note: 
+You can also see the project from out github [https://github.com/MickeyMiao7/Hand_Gesture_Recognition](https://github.com/MickeyMiao7/Hand_Gesture_Recognition)
+
+
 ### About CS5340
 The Hand Gesture Recognition is a course project of NUS School of Computing CS5340 
 [Uncertainty modelling in AI](http://web.bii.a-star.edu.sg/~chengli/courses/CS5340-F16/) Fall 2016.

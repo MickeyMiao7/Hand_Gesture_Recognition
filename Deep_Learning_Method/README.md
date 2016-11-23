@@ -3,7 +3,8 @@
 
 ### Platform
 * Ubuntu16.04 or other common Linux version.
-* Caffe Deep Learning Framework. To install it, you can refer to its [official website](http://caffe.berkeleyvision.org/). Or you can find the source code from [github](https://github.com/BVLC/caffe)
+* Caffe Deep Learning Framework. To install it, you can refer to its [official website](http://caffe.berkeleyvision.org/). Or you can find the source code from [github](https://github.com/BVLC/caffe).
+You must download the caffe from its website and build as instructions. And then put our files into the folder of caffe.
 * We train the model on GTX-Titan and use CUDA to accelerate computation. You can train the without CUDA or CUDNN but actually we strongly recommend you to use them.
 
 ### Directory
@@ -13,9 +14,9 @@
 README.md   * This file.
 data/   * Store images 
 data/crop_data    * Store images of after cropping, including train and test set
-data/crop_augment_data     * Store images of after cropping and with train data augmented
+data/crop_augment_data     * Store images of after cropping and with train data augmented. Note since the space of CD is limited, the data here is not complete. To generate complete data, please download the original data set and then run the script generate_augment_data.py
 scripts/    * Store all the scripts and tools
-caffe/    * Caffe deep learning framework
+caffe/    * Caffe deep learning framework, note: here the caffe files are incomplete, please download the caffe from its website and build. And then put our files into the folder of caffe.
 ...         
 caffe/examples    * Store the three models we use 
 caffe/examples/alexnet   * Stores the configuration files `solver.prototxt`,`train_val.prototxt` of AlexNet and the result file `log.txt`
@@ -23,6 +24,11 @@ caffe/examples/alexnet_augment/   * Just as the caffe/examples/alexnet, but the 
 caffe/examples/vgg    * Store files of VGG
 caffe/examples/google    * Store files of GoogLeNet
 ```
+
+#### Note: 
+Here the caffe files are incomplete, please download the caffe from its website and build. And then put our files into the folder of caffe.
+You can also see the project from out github [https://github.com/MickeyMiao7/Hand_Gesture_Recognition](https://github.com/MickeyMiao7/Hand_Gesture_Recognition)
+
 ### Image-Preprocessing
 To get the orinal dataset, you can run the command:
 ```console
